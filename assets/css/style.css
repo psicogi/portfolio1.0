@@ -1,1 +1,55 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --principal: #F2F4F8;
+    --texto: #2D3436;
+    --texto-inverso: #DFE6E9;
+    --destaque: #E62429;
+    --destaque-inverso: #005C99;
+    --card: #FFFFFF;
+
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--principal);
+    color: var(--texto);
+    font-family: var(--montserrat);
+    line-height: 1.5em;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    background: var(--destaque);
+    color: var(--texto);
+    padding: 10px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--texto-inverso);
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 7px;
+}
+
+.menu a:hover {
+    background: var(--destaque-inverso);
+    color: var(--texto-inverso);
+    transition: background 0.5s, color 0.5s;
+}
