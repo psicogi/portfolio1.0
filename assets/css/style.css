@@ -51,7 +51,7 @@ header {
 .menu a:hover {
     background: var(--destaque-inverso);
     color: var(--texto-inverso);
-    transition: background 0.5s, color 0.5s;
+    transition: background 0.5s, color 0.5s; /* serve para transição suave */
 }
 
 main {
@@ -73,12 +73,12 @@ main {
     margin: auto;
     margin-bottom: 15px;
     width: 200px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    overflow: hidden;
+    aspect-ratio: 1/1; /* mantém a proporção quadrada */
+    object-fit: cover; /* cobre todo o espaço disponível */
+    overflow: hidden; /* esconde o conteúdo excedente */
     border-radius: 50%;
     border: 5px solid var(--card);
-    outline: 5px solid var(--destaque);
+    outline: 5px solid var(--destaque); /* contorno em destaque */
 }
 
 .ficha h1 {
