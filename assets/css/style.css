@@ -88,6 +88,10 @@ main {
     color: var(--destaque);
 }
 
+.ficha p {
+    text-align: justify;
+}
+
 .ficha > div a {
     color: var(--destaque);
 }
