@@ -209,8 +209,9 @@ article h2 {
     color: var(--texto-inverso);
     transition: color 0.5s;
 }
-/* @media screen and (min-width: 768px) {
-    .skill-container {
-        grid-template-columns: repeat(2, 1fr);
+
+@media screen and (min-width: 768px) {
+    .info > .nome {
+        font-size: 1.2em;
     }
-} */
+}
