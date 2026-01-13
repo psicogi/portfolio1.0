@@ -122,7 +122,7 @@ article {
 }
 
 article h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: var(--destaque);
 }
 
@@ -165,6 +165,50 @@ article h2 {
     border-radius: 8px
 }
 
+.formacao-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+}
+
+.curso {
+    background: var(--principal);
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+}
+
+
+.curso:hover {
+    background: var(--destaque-inverso);
+    color: var(--texto-inverso);
+    border-left: 5px solid var(--texto-inverso);
+    transition: background 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+.periodo {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--texto);
+    margin-bottom: 5px;
+}
+
+.curso:hover .periodo {
+    color: var(--texto-inverso);
+    transition: color 0.5s;
+}
+
+.instituicao {
+    color: var(--destaque-inverso);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.curso:hover .instituicao {
+    color: var(--texto-inverso);
+    transition: color 0.5s;
+}
 /* @media screen and (min-width: 768px) {
     .skill-container {
         grid-template-columns: repeat(2, 1fr);
