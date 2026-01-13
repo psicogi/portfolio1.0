@@ -127,14 +127,21 @@ article h2 {
 }
 
 .skill-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
 }
 
 .item {
     display: grid;
     grid-template-columns: 50px 1fr;
     align-items: center;
+}
+
+.item:hover {
+    transform: scale(1.07);
+    transition: transform 0.2s;
 }
 
 .info {
