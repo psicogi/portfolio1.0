@@ -32,15 +32,17 @@ header {
     background: var(--destaque);
     color: var(--texto);
     padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
-.menu ul {
+#menu ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-.menu a {
+#menu a {
     text-decoration: none;
     color: var(--texto-inverso);
     font-weight: 600;
@@ -48,7 +50,7 @@ header {
     border-radius: 7px;
 }
 
-.menu a:hover {
+#menu a:hover {
     background: var(--destaque-inverso);
     color: var(--texto-inverso);
     transition: background 0.5s, color 0.5s; /* serve para transição suave */
@@ -61,14 +63,14 @@ main {
     margin-top: 20px;
 }
 
-.ficha {
+#ficha {
     grid-column: 2;
     background: var(--card);
     padding: 20px;
     border-radius: 8px;
 }
 
-.ficha .foto {
+#ficha .foto {
     display: block;
     margin: auto;
     margin-bottom: 15px;
@@ -81,22 +83,22 @@ main {
     outline: 5px solid var(--destaque); /* contorno em destaque */
 }
 
-.ficha h1 {
+#ficha h1 {
     text-align: center;
     margin: 15px 0;
     font-size: 1.8em;
     color: var(--destaque);
 }
 
-.ficha p {
+#ficha p {
     text-align: justify;
 }
 
-.ficha > div a {
+#ficha > div a {
     color: var(--destaque);
 }
 
-.ficha > div a:hover {
+#ficha > div a:hover {
     color: var(--destaque-inverso);
     transition: color 0.5s;
 }
