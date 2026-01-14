@@ -48,12 +48,12 @@ header {
     font-weight: 600;
     padding: 12px 15px;
     border-radius: 7px;
+    transition: background 0.3s, color 0.5s; /* serve para transição suave */
 }
 
 #menu a:hover {
     background: var(--destaque-inverso);
     color: var(--texto-inverso);
-    transition: background 0.5s, color 0.5s; /* serve para transição suave */
 }
 
 main {
