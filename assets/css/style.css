@@ -18,11 +18,21 @@
     --montserrat: 'Montserrat', sans-serif;
 }
 
+.escuro {
+    --principal: #101419;
+    --texto: #DFE6E9;
+    --texto-inverso: #101419;
+    --card: #2D3436;
+    --destaque: #FF5257;
+    --destaque-inverso: #4D96FF;
+}
+
 body {
     background: var(--principal);
     color: var(--texto);
     font-family: var(--montserrat);
     line-height: 1.5em;
+    transition: background 0.5s, color 0.5s;
 }
 
 header {
